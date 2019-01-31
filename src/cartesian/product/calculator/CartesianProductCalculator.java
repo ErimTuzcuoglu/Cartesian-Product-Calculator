@@ -42,15 +42,7 @@ public class CartesianProductCalculator {
 
         while (true) {
             if (sonucSutunIndex != -1) {
-                if ((sonucSutunIndex == (dizilerinDizisi.size() - 1)) && (sonucSatirIndex != sonucDizisi.length)) {
-                    sonucDizisi[sonucSatirIndex][sonucSutunIndex] = dizilerinDizisi.get(disIndex)[icIndex];
-                    sonucSatirIndex++;
-                    if (icIndex == (dizilerinDizisi.get(disIndex).length - 1)) {
-                        icIndex = 0;
-                    } else {
-                        icIndex++;
-                    }
-                } else if (sonucSatirIndex != sonucDizisi.length) {
+                if (sonucSatirIndex != sonucDizisi.length) {
                     sonucDizisi[sonucSatirIndex][sonucSutunIndex] = dizilerinDizisi.get(disIndex)[icIndex];
                     sonucSatirIndex++;
                     geciciYazmaSayisi--;
